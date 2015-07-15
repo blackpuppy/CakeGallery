@@ -18,6 +18,7 @@ vagrantfile:
             virtualbox:
                 modifyvm:
                     natdnshostresolver1: 'on'
+                    name: 'CakeGallery'
                 showgui: '0'
             vmware:
                 numvcpus: 1
