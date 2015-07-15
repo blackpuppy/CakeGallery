@@ -10,8 +10,8 @@ vagrantfile:
         network:
             private_network: 192.168.56.110
             forwarded_port:
-                vflnp_da405i49hckm:
-                    host: '5481'
+                vflnp_o8r3auqfjsfs:
+                    host: '5110'
                     guest: '22'
         post_up_message: ''
         provider:
