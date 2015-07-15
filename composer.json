@@ -9,5 +9,10 @@
     },
     "config": {
         "vendor-dir": "app/Vendor/"
+    },
+    "extra": {
+        "installer-paths": {
+            "app/Plugin/DebugKit": ["cakephp/debug_kit"]
+        }
     }
 }
