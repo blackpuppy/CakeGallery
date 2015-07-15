@@ -2,4 +2,4 @@
 .vagrant
 vagrant/puphpet/files/dot/ssh
 tmp
-linesandangles/webroot/files
+app/webroot/files
