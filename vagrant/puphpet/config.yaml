@@ -155,11 +155,11 @@ apache:
         - proxy_fcgi
         - rewrite
     vhosts:
-        av_m2kka7d8g3rr:
+        cakegallery:
             servername: cakegallery.local
             serveraliases:
                 - www.cakegallery.local
-            docroot: /var/www/CakeGallery/webroot
+            docroot: /var/www/CakeGallery/app/webroot
             port: '80'
             setenv:
                 - 'APP_ENV dev'
@@ -173,7 +173,7 @@ apache:
             ssl_cipher: ''
             directories:
                 avd_r6shix457w8d:
-                    path: /var/www/CakeGallery/webroot
+                    path: /var/www/CakeGallery/app/webroot
                     options:
                         - Indexes
                         - FollowSymlinks
