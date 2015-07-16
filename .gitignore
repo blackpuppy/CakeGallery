@@ -1,5 +1,6 @@
 .DS_Store
 .vagrant
+nbproject
 vagrant/puphpet/files/dot/ssh
 tmp
 app/webroot/files
