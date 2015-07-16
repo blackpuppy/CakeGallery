@@ -22,7 +22,7 @@
  * In production mode, flash messages redirect after a time interval.
  * In development mode, you need to click the flash message to continue.
  */
-	Configure::write('debug', 2);
+Configure::write('debug', 2);
 
 /**
  * Configure the Error handler used to handle errors for your application. By default
@@ -39,11 +39,11 @@
  *
  * @see ErrorHandler for more information on error handling and configuration.
  */
-	Configure::write('Error', array(
-		'handler' => 'ErrorHandler::handleError',
-		'level' => E_ALL & ~E_DEPRECATED,
-		'trace' => true
-	));
+Configure::write('Error', array(
+	'handler' => 'ErrorHandler::handleError',
+	'level' => E_ALL & ~E_DEPRECATED,
+	'trace' => true
+));
 
 /**
  * Configure the Exception handler used for uncaught exceptions. By default,
@@ -65,16 +65,16 @@
  *
  * @see ErrorHandler for more information on exception handling and configuration.
  */
-	Configure::write('Exception', array(
-		'handler' => 'ErrorHandler::handleException',
-		'renderer' => 'ExceptionRenderer',
-		'log' => true
-	));
+Configure::write('Exception', array(
+	'handler' => 'ErrorHandler::handleException',
+	'renderer' => 'ExceptionRenderer',
+	'log' => true
+));
 
 /**
  * Application wide charset encoding
  */
-	Configure::write('App.encoding', 'UTF-8');
+Configure::write('App.encoding', 'UTF-8');
 
 /**
  * To configure CakePHP *not* to use mod_rewrite and to
@@ -206,17 +206,19 @@
  * the cake shell command: cake schema create Sessions
  *
  */
-	Configure::write('Session', array(
-		'defaults' => 'php'
-	));
+Configure::write('Session', array(
+	'defaults' => 'php'
+));
 
 /**
  * A random string used in security hashing methods.
- */	Configure::write('Security.salt', '890d51e9a0789fe52b85249d0c79a712e3786a1b');
+ */
+Configure::write('Security.salt', '890d51e9a0789fe52b85249d0c79a712e3786a1b');
 
 /**
  * A random numeric string (digits only) used to encrypt/decrypt strings.
- */	Configure::write('Security.cipherSeed', '326130316465373531663239353866');
+ */
+Configure::write('Security.cipherSeed', '326130316465373531663239353866');
 
 /**
  * Apply timestamps with the last modified time to static assets (js, css, images).
@@ -249,14 +251,14 @@
  * The class name and database used in CakePHP's
  * access control lists.
  */
-	Configure::write('Acl.classname', 'DbAcl');
-	Configure::write('Acl.database', 'default');
+Configure::write('Acl.classname', 'DbAcl');
+Configure::write('Acl.database', 'default');
 
 /**
  * Uncomment this line and correct your server timezone to fix
  * any date & time related errors.
  */
-	//date_default_timezone_set('UTC');
+date_default_timezone_set('Asia/Singapore');
 
 /**
  * Cache Engine Configuration
