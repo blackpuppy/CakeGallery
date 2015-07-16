@@ -113,7 +113,9 @@ class Album extends GalleryAppModel
                     'model_id' => $model_id,
                     'status' => 'draft',
                     'tags' => '',
-                    'title' => $this->generateAlbumName($model, $model_id)
+                    'title' => $this->generateAlbumName($model, $model_id),
+					'default_name' => '',
+					'path' => '',
                 )
             )
         );
